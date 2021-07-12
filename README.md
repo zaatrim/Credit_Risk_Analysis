@@ -191,14 +191,54 @@ next:
 
 ### Results
 
-#### 
-#### 
-#### 
-#### 
-#### 
+#### Naive random  Oversampling
+    in this algorithm the balanced_accuracy_score is 0.66
+    and accurecy matrix of :
+            	        Predicted high_risk	    Predicted low_risk
+    Actual high_risk	        75                  	26
+    Actual low_risk	            7216                	9888
+
+#### Oversampling using SMOTE
+    in this algorithm the balanced_accuracy_score is 0.65
+    and accurecy matrix of :
+            	        Predicted high_risk	    Predicted low_risk
+    Actual high_risk	        63                  	38
+    Actual low_risk	            5410	               	11694
+
+####  Undersampling
+
+    in this algorithm the balanced_accuracy_score is 0.544
+    and accurecy matrix of :
+            	        Predicted high_risk	    Predicted low_risk
+    Actual high_risk	        70                  	31
+    Actual low_risk	            10340	               	6764
+
+#### Combination (Over and Under) Sampling
+
+    in this algorithm the balanced_accuracy_score is 0.636
+    and accurecy matrix of :
+            	        Predicted high_risk	    Predicted low_risk
+    Actual high_risk	        71                  	30
+    Actual low_risk	            7351 	               9753	
+
+#### Ensemble Learners: Balanced Random Forest Classifier
+
+    in this algorithm the balanced_accuracy_score is 0.788
+    and accurecy matrix of :
+            	        Predicted high_risk	    Predicted low_risk
+    Actual high_risk	        71                  	30
+    Actual low_risk	            2153	               	14951
+
+
+#### Ensemble Learners: Easy Ensemble AdaBoost Classifier
+
+    in this algorithm the balanced_accuracy_score is 0.931
+    and accurecy matrix of :
+            	        Predicted high_risk	    Predicted low_risk
+    Actual high_risk	        93                  	8
+    Actual low_risk	            983	               	16121
 
    
 ## *Summary*
-### Advantages
-
+Based on the analysis outcome the Ensemble Learners: Easy Ensemble AdaBoost Classifier algorithm provide the best Prediction with 0.93 accuracy and high confusion matrix accuracy. 
  
